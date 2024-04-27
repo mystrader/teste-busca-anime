@@ -1,0 +1,21 @@
+.header {
+  font-family: 'Mulish', sans-serif;
+    background-color: var(--primary-color-main);
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-weight: 400;
+  }
+  
+  .textWhite {
+    color: var(--white-color);
+    font-weight: 400;
+    
+  }
+  
+  .textAnime {
+    color: var(--feedback-color-warning);
+    font-size: 40px;
+  }

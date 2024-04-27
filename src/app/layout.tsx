@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Mulish } from "next/font/google";
 import "../styles/globals.css";
 
-const mulish = Mulish({ subsets: ["latin"] });
+const mulish = Mulish({ weight: ["200","400","600"], subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Busca Anime",
