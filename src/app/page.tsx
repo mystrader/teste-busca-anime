@@ -2,7 +2,7 @@ import styles from '../styles/page.module.css';
 import Filtro from './components/Filtro';
 import Header from './components/Header';
 import Search from './components/Search';
-import { AverageScore } from './components/shared';
+import { AverageScore, Tag } from './components/shared';
 
 export default function Home() {
   return (
@@ -12,6 +12,7 @@ export default function Home() {
         <Filtro />
         <Search />
         <AverageScore numberScore="81" />
+        <Tag name="Drama" />
       </div>
     </main>
   );

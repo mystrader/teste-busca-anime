@@ -1,3 +1,15 @@
 .tag {
-  
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  background-color: var(--primary-color-light);
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 6px;
+  width: fit-content;
+  padding: 6px 10px;
+  color: var(--gray-color-lighter);
+  text-transform: capitalize;
 }

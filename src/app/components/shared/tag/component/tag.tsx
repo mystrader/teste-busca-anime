@@ -4,6 +4,7 @@ export interface tagProps {
   name?: string;
 }
 
-export function tag({ name = '------' }: tagProps) {
-  return <div className={styles.tag}>tag {name}</div>;
+export function Tag({ name = '------' }: tagProps) {
+  return <div className={styles.tag}>{name}</div>;
 }
+export default Tag;
