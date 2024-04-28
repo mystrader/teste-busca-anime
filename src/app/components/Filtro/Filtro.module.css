@@ -9,7 +9,7 @@
   margin: 0px;
 }
 
-.filtro {
+.buttonFiltro {
   border-radius: 4px;
   font-size: 14px;
   font-weight: 600;
@@ -20,12 +20,12 @@
   color: var(--primary-color-main);
 }
 
-.filtro:hover {
+.buttonFiltro:hover {
   background-color: var(--primary-color-main);
   color: var(--white-color);
 }
 
-.filtro.selecionado {
+.buttonFiltro.selecionado {
   background-color: var(--primary-color-main);
   color: var(--white-color);
   border: 1px solid var(--primary-color-main);

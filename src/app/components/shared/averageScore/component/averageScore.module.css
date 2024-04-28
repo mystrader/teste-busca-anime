@@ -1,0 +1,27 @@
+.averageScore {
+  padding: 3px 8px;
+  gap: 10px;
+  border-radius: 4px;
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  color: var(--gray-color-lighter);
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 6px;
+  width: fit-content;
+  padding: 4px 10px;
+}
+
+.error {
+  background-color: var(--feedback-color-error);
+}
+
+.warning {
+  background-color: var(--feedback-color-warning);
+}
+
+.success {
+  background-color: var(--feedback-color-success);
+}

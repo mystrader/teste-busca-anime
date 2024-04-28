@@ -30,7 +30,7 @@ const Filtro: React.FC = () => {
       {filtros.map((filtro) => (
         <button
           key={filtro.id}
-          className={`${styles.filtro} ${
+          className={`${styles.buttonFiltro} ${
             filtroSelecionado === filtro.id ? styles.selecionado : ''
           }`}
           onClick={() => handleSelecionarFiltro(filtro.id)}
