@@ -36,8 +36,29 @@ h3.title {
   color: var(--white-color);
   font-family: 'Mulish', sans-serif;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 32.12px;
   text-align: left;
   text-overflow: ellipsis;
 }
+
+.genreList {
+  position: absolute;
+  top: 120px;
+  left: 15px;
+  display: flex;
+  list-style-type: none;
+  margin: 0px;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.averageScore {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+/* ul.genre-list li {
+  margin-right: 8px;
+} */
