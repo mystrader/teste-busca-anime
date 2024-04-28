@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
-import { Mulish } from "next/font/google";
 import "../styles/globals.css";
+import { mulish } from "./utils/font";
 
-const mulish = Mulish({ weight: ["200","400","600"], subsets: ["latin"] });
+
 
 export const metadata: Metadata = {
   title: "Busca Anime",
   description: "Prova FrontEnd 2024 - Winnin",
 };
+
+
 
 export default function RootLayout({
   children,
@@ -15,8 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={mulish.className}>{children}</body>
+    <html lang="en" className={`${mulish.className}`}>
+      <body>{children}</body>
     </html>
   );
 }
