@@ -5,16 +5,14 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  font-weight: 400;
+  font-size: 40px;
 }
 
 .textWhite {
   color: var(--white-color);
-  font-weight: 400;
-  font-size: 40px;
 }
 
-.textAnime {
+.textOrange {
   color: var(--feedback-color-warning);
-  font-weight: 400;
-  font-size: 40px;
 }

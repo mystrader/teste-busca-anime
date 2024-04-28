@@ -1,9 +1,10 @@
-.main {  
+.main {
   min-height: 100vh;
 }
 
 .container {
   width: 90%;
-  max-width: 1200px; 
-  margin: 0 auto; 
+  max-width: 1200px;
+  margin: 0 auto;
+  height: calc(100vh - 136px);
 }

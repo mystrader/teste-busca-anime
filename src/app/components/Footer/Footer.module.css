@@ -1,0 +1,27 @@
+.footerAnime {
+  display: flex;
+  background-color: var(--primary-color-main);
+  height: 68px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.textOrange {
+  color: var(--feedback-color-warning);
+}
+.textWhite {
+  color: var(--white-color);
+}
+
+.rightsReserved {
+  margin-top: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 10px;
+  align-items: center;
+  color: var(--white-color);
+}
