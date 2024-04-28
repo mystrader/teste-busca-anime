@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from '../styles/page.module.css';
 import Card from './components/CardItem';
 import Filtro from './components/Filtro';
@@ -47,7 +48,14 @@ export default function Home() {
           imageUrl="https://placehold.co/317x250/ccc/bbb/png"
           title={'Goblin Slayer II'}
         />
+        <div className={styles.buttonSearchMore}>
+          <button>
+            <Image src="/plus.svg" alt="Ver mais" width={30} height={24} />
+            <span>Ver mais</span>
+          </button>
+        </div>
       </div>
+
       {/* <AverageScore numberScore="81" />
         <Tag name="Drama" /> */}
 
