@@ -1,0 +1,43 @@
+.card {
+  position: relative;
+  width: 317px;
+  height: 270px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--primary-color-light);
+  grid-column: span 4;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180.22deg,
+    rgba(0, 0, 0, 0.85) 0.19%,
+    rgba(0, 0, 0, 0.17) 105.04%
+  );
+  opacity: 0.5;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h3.title {
+  position: absolute;
+  top: 20px;
+  width: 281px;
+  left: 20px;
+  color: var(--white-color);
+  font-family: 'Mulish', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.12px;
+  text-align: left;
+  text-overflow: ellipsis;
+}

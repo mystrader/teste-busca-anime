@@ -24,6 +24,7 @@
   color: var(--white-color);
   padding: 4px 16px;
   cursor: pointer;
+  border: none;
 }
 
 .buttonSearch:hover {
