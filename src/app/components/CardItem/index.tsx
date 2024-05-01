@@ -6,14 +6,14 @@ interface CardProps {
   imageUrl: string;
   title: string;
   genres?: string[];
-  averageScore?: string; // Adicione averageScore aqui
+  averageScore?: string;
 }
 
 const Card: React.FC<CardProps> = ({
   imageUrl,
   title,
   genres,
-  averageScore, // Adicione averageScore aqui
+  averageScore,
 }) => {
   return (
     <div className={styles.card}>
