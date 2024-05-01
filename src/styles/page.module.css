@@ -50,3 +50,9 @@
 .buttonSearchMore button Image {
   margin-right: 13px; /* Adiciona espaço entre a imagem e o texto */
 }
+
+@media (prefers-color-scheme: dark) {
+  .buttonSearchMore button {
+    color: #ffffff;
+  }
+}

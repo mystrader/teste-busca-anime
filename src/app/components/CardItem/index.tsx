@@ -18,7 +18,11 @@ const Card: React.FC<CardProps> = ({
   return (
     <div className={styles.card}>
       <div className={styles.overlay}></div>
-      <img src={imageUrl} alt={title} className={styles.image} />
+      <img
+        src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx1-CXtrrkMpJ8Zq.png"
+        alt={title}
+        className={styles.image}
+      />
       <h3 className={styles.title}>{title}</h3>
 
       <ul className={styles.genreList}>

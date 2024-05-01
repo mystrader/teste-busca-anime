@@ -44,7 +44,7 @@ h3.title {
 
 .genreList {
   position: absolute;
-  top: 120px;
+  top: 128px;
   left: 15px;
   display: flex;
   list-style-type: none;
@@ -62,3 +62,9 @@ h3.title {
 /* ul.genre-list li {
   margin-right: 8px;
 } */
+
+@media (prefers-color-scheme: dark) {
+  h3.title {
+    color: #ffffff;
+  }
+}

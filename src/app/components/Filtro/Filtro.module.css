@@ -31,3 +31,11 @@
   color: var(--white-color);
   border: 1px solid var(--primary-color-main);
 }
+
+@media (prefers-color-scheme: dark) {
+  .buttonFiltro,
+  .buttonFiltro:hover,
+  .buttonFiltro.selecionado {
+    color: #ffffff;
+  }
+}
