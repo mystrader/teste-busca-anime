@@ -21,6 +21,8 @@ export const GET_ANIMES_PAGE = gql`
         seasonYear
         status
         episodes
+        genres
+        averageScore
       }
     }
   }

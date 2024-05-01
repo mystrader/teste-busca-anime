@@ -7,6 +7,8 @@ interface IAnime {
   seasonYear?: number;
   status?: string;
   format?: string;
+  genre?: string;
+  averageScore?: number;
 }
 
 export const isAnimeInFavoriteList = (

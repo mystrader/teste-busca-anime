@@ -6,7 +6,6 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Search from './components/Search';
 import { getAnimesPerPage } from './utils/getAnimesPerPage';
-import mockCardDataArray from './utils/mock/mockDataAnime';
 
 interface IAnime {
   id: number;
@@ -21,6 +20,8 @@ interface IAnime {
   seasonYear: number;
   status: string;
   format: string;
+  genres: string[];
+  averageScore: string;
 }
 
 export default async function Home() {
@@ -31,15 +32,18 @@ export default async function Home() {
   const animeData = data.map((anime: IAnime) => {
     return {
       id: anime.id,
-      englishTitle: anime.title.english,
-      nativeTitle: anime.title.native,
+      title: anime.title.english,
       coverImage: anime.coverImage.large,
       episodes: anime.episodes,
       seasonYear: anime.seasonYear,
       status: anime.status,
       format: anime.format,
+      genres: anime.genres,
+      averageScore: anime.averageScore,
     };
   });
+
+  console.log('DATA ANIME >>>>>>>>>', animeData);
 
   return (
     <main className={styles.main}>
@@ -49,8 +53,14 @@ export default async function Home() {
         <Search />
       </div>
       <div className={styles.cardContainer}>
-        {mockCardDataArray.map((cardData, index) => (
-          <Card key={index} {...cardData} />
+        {animeData.map((anime, index) => (
+          <Card
+            key={index}
+            imageUrl={anime.coverImage}
+            title={anime.title}
+            genres={anime.genres}
+            averageScore={anime.averageScore} // Passe averageScore como prop aqui
+          />
         ))}
         <div className={styles.buttonSearchMore}>
           <button>

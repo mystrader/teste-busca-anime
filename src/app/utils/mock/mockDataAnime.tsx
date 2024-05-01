@@ -7,8 +7,8 @@ export interface AnimeData {
 
 const mockCardDataArray: AnimeData[] = [
   {
-    imageUrl: 'https://placehold.co/317x250/ccc/bbb/png',
-    title: 'Zom 100: Zombie ni Naru Made ni Shitai 100 no Koto',
+    imageUrl: 'https://placehold.co/317x250/ccc/bbb/png', // englishTitle
+    title: 'Zom 100: Zombie ni Naru Made ni Shitai 100 no Koto', // coverImage
     genreList: ['Action', 'Adventure', 'Comedy', 'Drama', 'Fantasy'],
     averageScore: 44,
   },

@@ -10,6 +10,7 @@ interface IAnime {
   seasonYear?: number;
   status?: string;
   format?: string;
+  genres?: string;
 }
 
 type AnimeListType = {
@@ -35,6 +36,7 @@ export const useFavoriteAnimesStore = create(
               format: anime.format,
               id: anime.id,
               nativeTitle: anime.nativeTitle,
+              genres: anime.genres,
             },
           ],
           favoritesCounter: state.favoritesCounter + 1,
