@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import styles from '../styles/page.module.css';
 import Card from './components/CardItem';
 import Filtro from './components/Filtro';
@@ -14,20 +14,23 @@ export default function Home() {
   const [data, setData] = useState<IAnime[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
 
-  useEffect(() => {
-    loadInitialAnimes();
-  }, []);
-
-  const loadInitialAnimes = async () => {
-    const newData = await getAnimesPerPage(1, 10);
-    setData(newData);
-  };
-
+  // Função para carregar mais animes
   const loadMoreAnimes = async () => {
     const newData = await getAnimesPerPage(currentPage + 1, 10);
     setData((prevData) => [...prevData, ...newData]);
     setCurrentPage((prevPage) => prevPage + 1);
   };
+
+  // Função para carregar os primeiros animes
+  const loadInitialAnimes = async () => {
+    const newData = await getAnimesPerPage(1, 10);
+    setData(newData);
+  };
+
+  // Carrega os primeiros animes quando o componente é montado
+  useEffect(() => {
+    loadInitialAnimes();
+  }, []);
 
   return (
     <main className={styles.main}>
