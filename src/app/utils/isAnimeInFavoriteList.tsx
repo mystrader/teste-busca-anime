@@ -7,7 +7,7 @@ interface IAnime {
   seasonYear?: number;
   status?: string;
   format?: string;
-  genre?: string; // Corrigido para "genre"
+  genre?: string;
   averageScore?: number;
 }
 

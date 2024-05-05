@@ -1,3 +1,5 @@
+// Mock que me auxiliou no início para criar a estrutura do projeto, com dados fictícios de animes
+
 export interface AnimeData {
   imageUrl: string;
   title: string;
@@ -7,8 +9,8 @@ export interface AnimeData {
 
 const mockCardDataArray: AnimeData[] = [
   {
-    imageUrl: 'https://placehold.co/317x250/ccc/bbb/png', // englishTitle
-    title: 'Zom 100: Zombie ni Naru Made ni Shitai 100 no Koto', // coverImage
+    imageUrl: 'https://placehold.co/317x250/ccc/bbb/png',
+    title: 'Zom 100: Zombie ni Naru Made ni Shitai 100 no Koto',
     genreList: ['Action', 'Adventure', 'Comedy', 'Drama', 'Fantasy'],
     averageScore: 44,
   },
