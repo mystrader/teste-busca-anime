@@ -3,6 +3,9 @@ import Filtro from '@/app/components/Filtro';
 import Search from '@/app/components/Search';
 import { IAnime } from '@/app/interfaces/anime';
 import { getAnimesPerPage } from '@/app/utils/getAnimesPerPage';
+
+import { getAnimesByMediaFormat } from '@/app/utils/getAnimeByMediaFormat';
+import { getRepeatedFormat } from '@/app/utils/getRepeatedAnimeFormat';
 import { useFavoriteAnimesStore } from '@/store/favoriteAnimesStore';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
@@ -34,10 +37,21 @@ export default function CatalogAnime() {
   };
 
   const loadMoreAnimes = async () => {
-    console.log(favoriteAnimes);
-    const newData = await getAnimesPerPage(currentPage + 1, 10);
-    setData((prevData) => [...prevData, ...newData]);
-    setCurrentPage((prevPage) => prevPage + 1);
+    let currentFormat = getRepeatedFormat(favoriteAnimes);
+
+    if (currentFormat === 'ALL_FORMATS') {
+      const newData = await getAnimesPerPage(currentPage + 1, 10);
+      setData((prevData) => [...prevData, ...newData]);
+      setCurrentPage((prevPage) => prevPage + 1);
+    } else {
+      const newData = await getAnimesByMediaFormat(
+        currentPage + 1,
+        10,
+        currentFormat as string,
+      );
+      setData((prevData) => [...prevData, ...newData]);
+      setCurrentPage((prevPage) => prevPage + 1);
+    }
   };
 
   return (
