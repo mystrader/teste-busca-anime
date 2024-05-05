@@ -1,20 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Rodando o projeto
 
-First, run the development server:
+# Rodando o Projeto Next.js
+
+### 1. 🔄 Clone o repositório:
+
+```bash
+git clone -b develop https://github.com/mystrader/teste-busca-anime.git
+```
+
+### 2. 📂 Navegue até o diretório do projeto:
+
+```bash
+cd teste-busca-anime
+```
+
+### 3. 📦 Instale as dependências:
+
+```bash
+npm install
+```
+ou
+```bash
+yarn
+```
+
+### 4. ▶️ Inicie o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
+```
+ou
+```bash
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-## Projeto estático com mock
+### 5. 🌐 Visualize o projeto no navegador:
+
+Abra o seu navegador e acesse: [http://localhost:3000](http://localhost:3000)
+
+
+---
+
+## 👉🏻 Projeto estático com mock
 
 ![chrome_ztnz4hJZ56](https://github.com/mystrader/teste-busca-anime/assets/191412/5221a6f3-eb3d-4e3b-a4b9-e7e6f94c7d08)
 
