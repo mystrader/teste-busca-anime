@@ -1,9 +1,9 @@
-'use client';
 import Card from '@/app/components/CardItem';
 import Filtro from '@/app/components/Filtro';
 import Search from '@/app/components/Search';
 import { IAnime } from '@/app/interfaces/anime';
 import { getAnimesPerPage } from '@/app/utils/getAnimesPerPage';
+import { useFavoriteAnimesStore } from '@/store/favoriteAnimesStore';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import styles from './CatalogAnime.module.css';
@@ -11,13 +11,25 @@ import styles from './CatalogAnime.module.css';
 export default function CatalogAnime() {
   const [data, setData] = useState<IAnime[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
+  const { favoriteAnimes, setFavoriteAnimes } = useFavoriteAnimesStore() as any;
 
   useEffect(() => {
     loadInitialAnimes();
   }, []);
 
+  useEffect(() => {
+    setData(favoriteAnimes);
+  }, [favoriteAnimes]);
+
   const loadInitialAnimes = async () => {
-    const newData = await getAnimesPerPage(1, 10);
+    let newData = [];
+    if (favoriteAnimes.length === 0) {
+      newData = await getAnimesPerPage(1, 10);
+      setFavoriteAnimes(newData);
+    } else {
+      newData = favoriteAnimes;
+    }
+
     setData(newData);
   };
 

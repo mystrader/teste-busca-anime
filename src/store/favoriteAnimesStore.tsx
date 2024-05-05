@@ -15,6 +15,7 @@ interface IAnime {
 
 type AnimeListType = {
   favoriteAnimes: IAnime[];
+  setFavoriteAnimes: (animes: IAnime[]) => void;
   favoritesCounter: number;
   addAnime: (anime: IAnime) => void;
   removeAnime: (anime: IAnime) => void;
@@ -25,6 +26,9 @@ export const useFavoriteAnimesStore = create(
     (set) => ({
       favoriteAnimes: [],
       favoritesCounter: 0,
+      setFavoriteAnimes: (animes: IAnime[]) => {
+        set({ favoriteAnimes: animes });
+      },
       addAnime: (anime: IAnime) => {
         set((state: AnimeListType) => ({
           favoriteAnimes: [

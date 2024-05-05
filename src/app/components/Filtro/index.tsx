@@ -1,5 +1,6 @@
 'use client';
 
+import { useFavoriteAnimesStore } from '@/store/favoriteAnimesStore';
 import React, { useState } from 'react';
 import styles from './Filtro.module.css';
 
@@ -11,13 +12,17 @@ const filtros = [
   { id: 5, nome: 'Special' },
   { id: 6, nome: 'OVA' },
   { id: 7, nome: 'ONA' },
-  { id: 8, nome: 'Music' },
+  { id: 8, nome: 'Teste' },
 ];
 
 const Filtro: React.FC = () => {
   const [filtroSelecionado, setFiltroSelecionado] = useState<number | null>(1);
 
+  const { favoriteAnimes, setFavoriteAnimes } = useFavoriteAnimesStore();
+
   const handleSelecionarFiltro = (id: number) => {
+    console.log(favoriteAnimes);
+    setFavoriteAnimes([]);
     if (filtroSelecionado === id) {
       setFiltroSelecionado(1);
     } else {
