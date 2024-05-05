@@ -9,7 +9,7 @@ const Search: React.FC = () => {
         placeholder="Digite algo aqui..."
         className={styles.inputSearch}
       />
-      <button className={styles.buttonSearch}>Button</button>
+      <button className={styles.buttonSearch}>Buscar</button>
     </div>
   );
 };

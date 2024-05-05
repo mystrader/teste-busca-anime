@@ -68,3 +68,27 @@ h3.title {
     color: #ffffff;
   }
 }
+
+@media (max-width: 1190px) {
+  .card {
+    width: 100%;
+    grid-column: span 12;
+  }
+
+  h3.title {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .genreList {
+    top: 160px;
+  }
+}
+
+@media (max-width: 540px) {
+  .averageScore_averageScore {
+    gap: 6px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}

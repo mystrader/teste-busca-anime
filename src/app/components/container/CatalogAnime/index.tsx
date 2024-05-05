@@ -1,16 +1,14 @@
 'use client';
+import Card from '@/app/components/CardItem';
+import Filtro from '@/app/components/Filtro';
+import Search from '@/app/components/Search';
+import { IAnime } from '@/app/interfaces/anime';
+import { getAnimesPerPage } from '@/app/utils/getAnimesPerPage';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import styles from '../styles/page.module.css';
-import Card from './components/CardItem';
-import Filtro from './components/Filtro';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Search from './components/Search';
-import { IAnime } from './interfaces/anime';
-import { getAnimesPerPage } from './utils/getAnimesPerPage';
+import styles from './CatalogAnime.module.css';
 
-export default function Home() {
+export default function CatalogAnime() {
   const [data, setData] = useState<IAnime[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -30,8 +28,7 @@ export default function Home() {
   };
 
   return (
-    <main className={styles.main}>
-      <Header />
+    <>
       <div className={styles.container}>
         <Filtro />
         <Search />
@@ -53,7 +50,6 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <Footer />
-    </main>
+    </>
   );
 }

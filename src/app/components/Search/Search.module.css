@@ -36,3 +36,22 @@
     color: #ffffff;
   }
 }
+
+@media (max-width: 960px) {
+  .inputSearchBox {
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 17px;
+    margin-bottom: 23px;
+  }
+
+  .buttonSearch {
+    display: block;
+    width: 100%;
+    margin: 0px;
+  }
+}
