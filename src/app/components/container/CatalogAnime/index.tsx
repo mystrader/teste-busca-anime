@@ -34,6 +34,7 @@ export default function CatalogAnime() {
   };
 
   const loadMoreAnimes = async () => {
+    console.log(favoriteAnimes);
     const newData = await getAnimesPerPage(currentPage + 1, 10);
     setData((prevData) => [...prevData, ...newData]);
     setCurrentPage((prevPage) => prevPage + 1);
