@@ -49,6 +49,13 @@ Abra o seu navegador e acesse: [http://localhost:3000](http://localhost:3000)
 
 ![chrome_T00rPmJ82o](https://github.com/mystrader/teste-busca-anime/assets/191412/e4df65f0-64ff-45ab-b5fd-a0695015ed05)
 
+## Deploy na vercel
+
+![image](https://github.com/mystrader/teste-busca-anime/assets/191412/461a43ae-d061-4356-adfd-803eb563b135)
+
+[Link da Aplicação](https://teste-busca-anime-76bxhuwf5-marcusmystraders-projects.vercel.app/) 
+
+
 
 ## DarkTheme (detecção da preferência do sistema do usuário)
 ![chrome_rKja1vUNzj](https://github.com/mystrader/teste-busca-anime/assets/191412/742e1620-3f09-4b60-82db-4e49aea776c7)
