@@ -1,25 +1,16 @@
 'use client';
 
+import { FILTROS } from '@/app/constants/filter.constant';
 import { getAnimesByMediaFormat } from '@/app/utils/getAnimeByMediaFormat';
 import { getAnimesPerPage } from '@/app/utils/getAnimesPerPage';
 import { useFavoriteAnimesStore } from '@/store/favoriteAnimesStore';
 import React, { useState } from 'react';
 import styles from './Filtro.module.css';
 
-const filtros = [
-  { id: 1, nome: 'All Formats', format: 'ALL_FORMATS' },
-  { id: 2, nome: 'Tv Show', format: 'TV' },
-  { id: 3, nome: 'Movie', format: 'MOVIE' },
-  { id: 4, nome: 'TV Short', format: 'TV_SHORT' },
-  { id: 5, nome: 'Special', format: 'SPECIAL' },
-  { id: 6, nome: 'OVA', format: 'OVA' },
-  { id: 7, nome: 'ONA', format: 'ONA' },
-];
-
 const Filtro: React.FC = () => {
   const [filtroSelecionado, setFiltroSelecionado] = useState<number | null>(1);
 
-  const { favoriteAnimes, setFavoriteAnimes } = useFavoriteAnimesStore();
+  const { setFavoriteAnimes } = useFavoriteAnimesStore();
 
   const handleSelecionarFiltro = (id: number) => {
     setFavoriteAnimes([]);
@@ -41,7 +32,7 @@ const Filtro: React.FC = () => {
         setFavoriteAnimes(newData);
         return;
       } else {
-        const newData = await getAnimesByMediaFormat(1, 10, ANIME_TYPE);
+        const newData = await getAnimesByMediaFormat(1, 12, ANIME_TYPE);
         setFavoriteAnimes(newData);
       }
     } catch (error) {
@@ -51,7 +42,7 @@ const Filtro: React.FC = () => {
 
   return (
     <div className={styles.filtroBox}>
-      {filtros?.map((filtro) => (
+      {FILTROS?.map((filtro) => (
         <button
           key={filtro.id}
           className={`${styles.buttonFiltro} ${

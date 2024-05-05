@@ -27,7 +27,7 @@ export default function CatalogAnime() {
   const loadInitialAnimes = async () => {
     let newData = [];
     if (favoriteAnimes.length === 0) {
-      newData = await getAnimesPerPage(1, 10);
+      newData = await getAnimesPerPage(1, 12);
       setFavoriteAnimes(newData);
     } else {
       newData = favoriteAnimes;
@@ -40,7 +40,7 @@ export default function CatalogAnime() {
     let currentFormat = getRepeatedFormat(favoriteAnimes);
 
     if (currentFormat === 'ALL_FORMATS') {
-      const newData = await getAnimesPerPage(currentPage + 1, 10);
+      const newData = await getAnimesPerPage(currentPage + 1, 12);
       setData((prevData) => [...prevData, ...newData]);
       setCurrentPage((prevPage) => prevPage + 1);
     } else {
