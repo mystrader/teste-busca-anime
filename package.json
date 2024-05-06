@@ -6,12 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test:e2e": "cypress run",
+    "cy:open": "cypress open"
   },
   "dependencies": {
     "@apollo/client": "^3.10.1",
     "graphql": "^16.8.1",
     "next": "14.2.3",
+    "pnpm": "^9.0.6",
     "react": "^18",
     "react-dom": "^18",
     "zustand": "^4.5.2"
@@ -20,6 +23,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "cypress": "^13.8.1",
     "typescript": "^5"
   }
 }
