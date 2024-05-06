@@ -8,6 +8,7 @@ import { getAnimesByMediaFormat } from '@/app/utils/getAnimeByMediaFormat';
 import { getRepeatedFormat } from '@/app/utils/getRepeatedAnimeFormat';
 import { useFavoriteAnimesStore } from '@/store/favoriteAnimesStore';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import styles from './CatalogAnime.module.css';
 
@@ -61,18 +62,31 @@ export default function CatalogAnime() {
         <Search />
       </div>
       <div className={styles.cardContainer}>
-        {data.map((anime, index) => (
-          <Card
+        {!data && <h3>carregando ....</h3>}
+        {data?.map((anime, index) => (
+          <Link
+            href={`/details/${anime.id}`}
             key={index}
-            imageUrl={anime?.coverImage.large}
-            title={anime?.title.english}
-            genres={anime?.genres}
-            averageScore={anime?.averageScore}
-          />
+            className={styles.linkAnimeItem}
+            title={`Detalhes do anime ${anime.title.english}`}
+          >
+            <Card
+              imageUrl={anime?.coverImage.large}
+              title={anime?.title.english}
+              genres={anime?.genres}
+              averageScore={anime?.averageScore}
+            />
+          </Link>
         ))}
         <div className={styles.buttonSearchMore}>
           <button onClick={loadMoreAnimes}>
-            <Image src="/plus.svg" alt="Ver mais" width={30} height={24} />
+            <Image
+              src="/plus.svg"
+              alt="Ver mais"
+              width={30}
+              height={24}
+              title="Ver Mais"
+            />
             <span>Ver mais</span>
           </button>
         </div>

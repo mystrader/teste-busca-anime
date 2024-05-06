@@ -3,7 +3,10 @@ import styles from './Footer.module.css';
 
 const Footer: React.FC = () => {
   return (
-    <footer className={styles.footerAnime}>
+    <footer
+      className={styles.footerAnime}
+      title="Todos os direitos reservados a Winnin - prova Frontend"
+    >
       <div>
         <span className={styles.textWhite}>BUSC</span>
         <span className={styles.textOrange}>ANIME</span>

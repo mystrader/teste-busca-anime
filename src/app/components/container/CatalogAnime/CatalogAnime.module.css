@@ -16,6 +16,15 @@
   justify-content: center;
 }
 
+.linkAnimeItem {
+  border: 3px solid transparent;
+  border-radius: 6px;
+  transition: all 0.5s ease;
+}
+.linkAnimeItem:hover {
+  border: 3px solid var(--feedback-color-warning);
+}
+
 .buttonSearchMore {
   padding: 12px 0px;
   border: none;

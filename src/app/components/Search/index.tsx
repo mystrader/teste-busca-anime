@@ -34,7 +34,7 @@ export default function Search() {
           value={searchTerm}
           onChange={handleChange}
         />
-        <button type="submit" className={styles.buttonSearch}>
+        <button type="submit" className={styles.buttonSearch} title="Buscar">
           Buscar
         </button>
       </form>

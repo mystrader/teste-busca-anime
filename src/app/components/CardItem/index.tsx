@@ -30,7 +30,7 @@ const Card: React.FC<CardProps> = ({
           ))}
       </ul>
 
-      {averageScore && ( // Verifique se averageScore existe antes de renderizar o componente AverageScore
+      {averageScore && (
         <div className={styles.averageScore}>
           <AverageScore numberScore={averageScore.toString()} />
         </div>
