@@ -37,8 +37,8 @@
   }
 }
 
-@media (max-width: 960px) {
-  .inputSearchBox {
+@media (max-width: 1200px) {
+  /* .inputSearchBox {
     display: flex;
     align-content: flex-start;
     justify-content: space-evenly;
@@ -47,8 +47,18 @@
     flex-wrap: wrap;
     gap: 17px;
     margin-bottom: 23px;
+  } */
+  .inputSearchBox form {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 23px;
+    flex-direction: row;
+    align-items: center;
   }
-
   .buttonSearch {
     display: block;
     width: 100%;

@@ -70,4 +70,8 @@
     padding: 12px 0px;
     font-size: 24px;
   }
+
+  .linkAnimeItem {
+    width: 92vw !important;
+  }
 }
