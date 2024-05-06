@@ -1,7 +1,9 @@
 
 ![image](https://github.com/mystrader/teste-busca-anime/assets/191412/8114d087-ff1e-4035-9293-72abf7b6b1c8)
 
+## Projeto publicado
 
+[https://teste-busca-anime.vercel.app/](https://teste-busca-anime.vercel.app/)
 
 ## Resumo das Atividades (CheckList)
 
