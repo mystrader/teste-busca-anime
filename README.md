@@ -1,38 +1,39 @@
 
 ![image](https://github.com/mystrader/teste-busca-anime/assets/191412/8114d087-ff1e-4035-9293-72abf7b6b1c8)
 
-## Projeto publicado
+## ☁️ Projeto publicado
 
 [https://teste-busca-anime.vercel.app/](https://teste-busca-anime.vercel.app/)
 
-## Resumo das Atividades (CheckList)
+## 📃 Resumo das Atividades (CheckList)
 
-- [x]  O usuário pode aplicar filtro de formatos
-- [x]  Também fazer busca por texto.
-- [x]  Cada card de anime deve exibir o `averageScore` seguindo a regra: Abaixo de 50, vermelho, entre 50 e 80 amarelo, acima de 80, verde.
-- [x]  Se atende ao que foi pedido;
-- [x]  Uso dos padrões do React(Responsabilidade Única, Imutabilidade, Composição, Reatividade);
-- [x]  Organização dos componentes;
-- [x]  Controle dos estados;
-- [x]  Tratamento de erros;
-- [x]  Quantidade de bugs.
+- [x]  O usuário pode aplicar filtro de formatos (Utilizei a $Format search mediante estudo da doc do aniList)
+- [x]  Também fazer busca por texto.  ✅ Feito  (Utilizei a query $Search mediante estudo da doc do aniList)
+- [x]  Cada card de anime deve exibir o `averageScore` seguindo a regra: Abaixo de 50, vermelho, entre 50 e 80 amarelo, acima de 80, verde. ✅ Feito  (Tratamento no componente Average, mediante uma entrada tipo number)
+- [x]  Se atende ao que foi pedido; ✅ Feito  ( Segui o Design de acordo com o Figma)
+- [x]  Uso dos padrões do React(Responsabilidade Única, Imutabilidade, Composição, Reatividade); ✅ Feito 
+- [x]  Organização dos componentes; ✅ Feito ( micro componentes com responsabilidades definidas )
+- [x]  Controle dos estados; ✅ Feito ( Geranciado via @Store do zustand )
+- [x]  Tratamento de erros - ✅ Feito (try catch, tratamento de variáveis etc..)
+- [x]  Quantidade de bugs. ✅ Feito ( Teste de vários cenários durante o desenvolvimento )
 
-- [x]  Testes unitários; (fiz alguns testes)
-- [x]  Testes e2e; (apenas configurei o cypress)
-- [x]  Documentação;
-- [x]  Projeto rodando em algum serviço(Vercel, Netlify, etc);
-- [x]  Inclusão de outras funcionalidades(Dark mode, responsividade, mais filtros, mais páginas, etc)
-    - [x]  [ DARK THEME ] Se o usuário mudar a preferência do sistema o sistema muda para dark-theme
-    - [x]  [ Responsividade] Foi testado no celular e ipad
-    - [x]  Fazer página de detalhes
-
-
-## Arquitetura dos componnents
-
-![image](https://github.com/mystrader/teste-busca-anime/assets/191412/57383617-938e-4c0f-8778-cb2402badd69)
+- [x]  Testes unitários; (fiz alguns testes) ✅ Feito ( Configurei o Jest e react Test Library focado em perfomance - fiz 3 testes de exemplo )
+- [x]  Testes e2e; (apenas configurei o cypress) ✅ Feito  (Fiz a penas a configuração pois senti que poderia estourar o tempo  )
+- [x]  Documentação; ✅ Feito - (Este documento)
+- [x]  Projeto rodando em algum serviço(Vercel, Netlify, etc); ✅ Feito 
+- [x]  Inclusão de outras funcionalidades(Dark mode, responsividade, mais filtros, mais páginas, etc) ✅ Feito  ( Vide evidências abaixo)
+    - [x]  [ DARK THEME ] Se o usuário mudar a preferência do sistema o sistema muda para dark-theme ✅ Feito
+    - [x]  [ Responsividade] Foi testado no celular e ipad ✅ Feito
+    - [x]  Fazer página de detalhes, mostrando mais detalhes ✅ Feito
 
 
-## Tecnologias Usadas
+## 📐 Arquitetura dos components
+
+![image](https://github.com/mystrader/teste-busca-anime/assets/191412/4a4ad583-4af1-445b-8133-235ad02c2a4c)
+
+
+
+## 💻 Tecnologias Usadas
 
 | Tecnologia               | Versão    |
 |--------------------------|-----------|
@@ -51,9 +52,9 @@
 | cypress                  | ^13.8.1   |
 
 
-## Como rodar o projeto
+## 📄 Como rodar o projeto
 
----
+
 
 <details>
   <summary> Rodando o Projeto Next.js</summary>
@@ -101,13 +102,13 @@ Abra o seu navegador e acesse: [http://localhost:3000](http://localhost:3000)
 </details>
 
 
----
-
-## Telas
 
 
+## 🖼️ Telas
 
- ## 👉🏻 Projeto estático com mock
+
+
+ ## 👉🏻 Projeto estático com mock (Evidência de quando terminei o estático)
 
 ![chrome_ztnz4hJZ56](https://github.com/mystrader/teste-busca-anime/assets/191412/5221a6f3-eb3d-4e3b-a4b9-e7e6f94c7d08)
 
@@ -131,7 +132,7 @@ Abra o seu navegador e acesse: [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## Mais Evidências
+## 🔦 Mais Evidências
 
 - Modo Light
 
